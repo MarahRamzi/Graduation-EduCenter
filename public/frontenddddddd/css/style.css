@@ -1,0 +1,109 @@
+:root {
+  --blue: #3498db;
+  --gray: #f3f7f9;
+  --background: #f3f2f2;
+  --lgray: #f3f2f2;
+  --dblue: #152238 ;
+}
+body{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+header{
+  background-image: url(https://plus.unsplash.com/premium_photo-1682787494863-177371a38ab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JvdXAlMjBvZiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  position: relative;
+  z-index: 0;
+}
+header .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--dblue);
+  opacity: 85%;
+}
+nav{
+  z-index: 2;
+  position: relative;
+}
+@media (min-width:700px) {
+  .green{
+    position: absolute;
+    top: 0;
+    right:100px;
+    line-height: 50px;
+   padding: 0 50px;
+  }
+}
+.thirdAbout{
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://media.istockphoto.com/id/1386193712/photo/knowledge.webp?b=1&s=170667a&w=0&k=20&c=uVrdfrer28TziVgh8HhlgwhGWB6UKn5WRpJLg7jvsY8=);
+}
+.thirdAbout #second p{
+ word-break: 500px;
+}
+.navbar-toggler{
+  z-index: 3;
+}
+.text{
+  position: relative;
+  z-index: 4 !important;
+  padding: 50px 0;
+}
+.ContactUs,.AboutUs{
+  background-color: var(--lgray);
+  width: 100%;
+  height: 100%;
+  }
+  /* .AboutUS{} */
+  #navbarSupportedContent .nav-link{
+    border-bottom: 3px solid transparent;
+  }
+#navbarSupportedContent .nav-link:hover,#navbarSupportedContent .nav-link:focus,#navbarSupportedContent .nav-link:active{
+  border-bottom: 3px solid white;
+}
+  @media (max-width:700px) {
+    .container input,textarea,a{
+      margin-top: 10px;
+    }
+    .container div:nth-child(2){
+      margin-top: 20px;
+    }
+    .green{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+  }
+ 
+  footer{
+    background-color: var(--dblue);
+    position: relative;
+  }
+  #form{
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+  .card{
+    position: relative;
+  }
+  .card #date{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    background-color: rgba(40,167,69, 0.7);
+  }
+  .first{
+    background-color: var(--lgray);
+  }
+  .sixth{
+    background-color: var(--lgray);
+  }
